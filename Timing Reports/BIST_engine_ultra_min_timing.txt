@@ -1,0 +1,48 @@
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+        -sort_by group
+Design : BIST_engine_top
+Version: O-2018.06-SP5-1
+Date   : Sat Dec 21 04:46:04 2019
+****************************************
+
+Operating Conditions: ff1p16v125c   Library: saed32rvt_ff1p16v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: bg_0/i_reg[6]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: bg_0/i_reg[6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  BIST_engine_top    8000                  saed32rvt_ff1p16v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  bg_0/i_reg[6]/CLK (DFFX1_RVT)            0.00       0.50 r
+  bg_0/i_reg[6]/QN (DFFX1_RVT)             0.04       0.54 f
+  U3154/Y (AO22X1_RVT)                     0.02       0.56 f
+  bg_0/i_reg[6]/D (DFFX1_RVT)              0.00       0.56 f
+  data arrival time                                   0.56
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.01       0.51
+  bg_0/i_reg[6]/CLK (DFFX1_RVT)            0.00       0.51 r
+  library hold time                        0.00       0.51
+  data required time                                  0.51
+  -----------------------------------------------------------
+  data required time                                  0.51
+  data arrival time                                  -0.56
+  -----------------------------------------------------------
+  slack (MET)                                         0.05
+
+

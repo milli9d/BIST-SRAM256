@@ -1,0 +1,96 @@
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : blanket_0
+Version: O-2018.06-SP5-1
+Date   : Fri Dec 20 21:46:36 2019
+****************************************
+
+Operating Conditions: ff1p16v125c   Library: saed32rvt_ff1p16v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: i_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: multiple_wait_state_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  blanket_0          8000                  saed32rvt_ff1p16v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  i_reg[1]/CLK (DFFX1_RVT)                                0.00       0.50 r
+  i_reg[1]/Q (DFFX1_RVT)                                  0.06       0.56 r
+  U231/Y (NAND3X0_RVT)                                    0.03       0.58 f
+  U232/Y (INVX1_RVT)                                      0.01       0.60 r
+  U233/Y (NAND3X0_RVT)                                    0.03       0.62 f
+  U234/Y (INVX1_RVT)                                      0.01       0.64 r
+  U235/Y (AND3X1_RVT)                                     0.03       0.66 r
+  U236/Y (NAND3X0_RVT)                                    0.03       0.69 f
+  U237/Y (INVX1_RVT)                                      0.01       0.70 r
+  U238/Y (NAND2X0_RVT)                                    0.02       0.72 f
+  U239/Y (INVX1_RVT)                                      0.01       0.73 r
+  U240/Y (NAND2X0_RVT)                                    0.02       0.75 f
+  U241/Y (INVX1_RVT)                                      0.01       0.76 r
+  U242/Y (AND2X1_RVT)                                     0.02       0.78 r
+  U243/Y (NAND2X0_RVT)                                    0.02       0.80 f
+  U244/Y (INVX1_RVT)                                      0.01       0.81 r
+  U245/Y (NAND2X0_RVT)                                    0.02       0.83 f
+  U246/Y (INVX1_RVT)                                      0.01       0.84 r
+  U247/Y (NAND2X0_RVT)                                    0.02       0.86 f
+  U248/Y (INVX1_RVT)                                      0.01       0.87 r
+  U249/Y (NAND2X0_RVT)                                    0.02       0.89 f
+  U250/Y (INVX1_RVT)                                      0.01       0.90 r
+  U251/Y (NAND2X0_RVT)                                    0.02       0.92 f
+  U252/Y (INVX1_RVT)                                      0.01       0.93 r
+  U253/Y (NAND2X0_RVT)                                    0.02       0.95 f
+  U254/Y (INVX1_RVT)                                      0.01       0.96 r
+  U255/Y (NAND2X0_RVT)                                    0.02       0.98 f
+  U256/Y (INVX1_RVT)                                      0.01       0.99 r
+  U257/Y (NAND2X0_RVT)                                    0.02       1.01 f
+  U258/Y (INVX1_RVT)                                      0.01       1.02 r
+  U259/Y (NAND2X0_RVT)                                    0.02       1.04 f
+  U260/Y (INVX1_RVT)                                      0.01       1.05 r
+  U261/Y (NAND2X0_RVT)                                    0.02       1.07 f
+  U262/Y (INVX1_RVT)                                      0.01       1.08 r
+  U263/Y (NAND2X0_RVT)                                    0.02       1.10 f
+  U264/Y (INVX1_RVT)                                      0.01       1.11 r
+  U265/Y (NAND2X0_RVT)                                    0.02       1.13 f
+  U266/Y (INVX1_RVT)                                      0.01       1.14 r
+  U267/Y (NAND2X0_RVT)                                    0.02       1.16 f
+  U268/Y (INVX1_RVT)                                      0.01       1.17 r
+  U269/Y (NAND2X0_RVT)                                    0.02       1.19 f
+  U270/Y (INVX1_RVT)                                      0.01       1.20 r
+  U271/Y (NAND2X0_RVT)                                    0.02       1.22 f
+  U272/Y (INVX1_RVT)                                      0.01       1.23 r
+  U273/Y (NAND2X0_RVT)                                    0.02       1.25 f
+  U274/Y (INVX1_RVT)                                      0.01       1.26 r
+  U275/Y (NAND2X0_RVT)                                    0.02       1.28 f
+  U276/Y (INVX1_RVT)                                      0.01       1.29 r
+  U277/Y (NAND2X0_RVT)                                    0.02       1.31 f
+  U309/SO (HADDX1_RVT)                                    0.04       1.35 r
+  U312/Y (NAND4X0_RVT)                                    0.02       1.37 f
+  U314/Y (OA221X1_RVT)                                    0.03       1.40 f
+  multiple_wait_state_reg[0]/D (DFFX1_RVT)                0.00       1.40 f
+  data arrival time                                                  1.40
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.50       1.50
+  clock uncertainty                                      -0.01       1.49
+  multiple_wait_state_reg[0]/CLK (DFFX1_RVT)              0.00       1.49 r
+  library setup time                                     -0.02       1.47
+  data required time                                                 1.47
+  --------------------------------------------------------------------------
+  data required time                                                 1.47
+  data arrival time                                                 -1.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+

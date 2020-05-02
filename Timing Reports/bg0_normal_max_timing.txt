@@ -1,0 +1,85 @@
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : blanket_0
+Version: O-2018.06-SP5-1
+Date   : Fri Dec 20 21:45:29 2019
+****************************************
+
+Operating Conditions: ff1p16v125c   Library: saed32rvt_ff1p16v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: i_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: multiple_wait_state_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  blanket_0          8000                  saed32rvt_ff1p16v125c
+  blanket_0_DW01_inc_0
+                     ForQA                 saed32rvt_ff1p16v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  i_reg[0]/CLK (DFFX1_RVT)                                0.00       0.50 r
+  i_reg[0]/Q (DFFX1_RVT)                                  0.06       0.56 r
+  add_56_S3/A[0] (blanket_0_DW01_inc_0)                   0.00       0.56 r
+  add_56_S3/U1_1_1/C1 (HADDX1_RVT)                        0.02       0.58 r
+  add_56_S3/U1_1_2/C1 (HADDX1_RVT)                        0.02       0.61 r
+  add_56_S3/U1_1_3/C1 (HADDX1_RVT)                        0.02       0.63 r
+  add_56_S3/U1_1_4/C1 (HADDX1_RVT)                        0.02       0.66 r
+  add_56_S3/U1_1_5/C1 (HADDX1_RVT)                        0.02       0.68 r
+  add_56_S3/U1_1_6/C1 (HADDX1_RVT)                        0.02       0.70 r
+  add_56_S3/U1_1_7/C1 (HADDX1_RVT)                        0.02       0.73 r
+  add_56_S3/U1_1_8/C1 (HADDX1_RVT)                        0.02       0.75 r
+  add_56_S3/U1_1_9/C1 (HADDX1_RVT)                        0.02       0.78 r
+  add_56_S3/U1_1_10/C1 (HADDX1_RVT)                       0.02       0.80 r
+  add_56_S3/U1_1_11/C1 (HADDX1_RVT)                       0.02       0.83 r
+  add_56_S3/U1_1_12/C1 (HADDX1_RVT)                       0.02       0.85 r
+  add_56_S3/U1_1_13/C1 (HADDX1_RVT)                       0.02       0.88 r
+  add_56_S3/U1_1_14/C1 (HADDX1_RVT)                       0.02       0.90 r
+  add_56_S3/U1_1_15/C1 (HADDX1_RVT)                       0.02       0.92 r
+  add_56_S3/U1_1_16/C1 (HADDX1_RVT)                       0.02       0.95 r
+  add_56_S3/U1_1_17/C1 (HADDX1_RVT)                       0.02       0.97 r
+  add_56_S3/U1_1_18/C1 (HADDX1_RVT)                       0.02       1.00 r
+  add_56_S3/U1_1_19/C1 (HADDX1_RVT)                       0.02       1.02 r
+  add_56_S3/U1_1_20/C1 (HADDX1_RVT)                       0.02       1.05 r
+  add_56_S3/U1_1_21/C1 (HADDX1_RVT)                       0.02       1.07 r
+  add_56_S3/U1_1_22/C1 (HADDX1_RVT)                       0.02       1.10 r
+  add_56_S3/U1_1_23/C1 (HADDX1_RVT)                       0.02       1.12 r
+  add_56_S3/U1_1_24/C1 (HADDX1_RVT)                       0.02       1.15 r
+  add_56_S3/U1_1_25/C1 (HADDX1_RVT)                       0.02       1.17 r
+  add_56_S3/U1_1_26/C1 (HADDX1_RVT)                       0.02       1.19 r
+  add_56_S3/U1_1_27/C1 (HADDX1_RVT)                       0.02       1.22 r
+  add_56_S3/U1_1_28/C1 (HADDX1_RVT)                       0.02       1.24 r
+  add_56_S3/U1_1_29/C1 (HADDX1_RVT)                       0.02       1.27 r
+  add_56_S3/U1_1_30/SO (HADDX1_RVT)                       0.04       1.31 f
+  add_56_S3/SUM[30] (blanket_0_DW01_inc_0)                0.00       1.31 f
+  U223/Y (OR3X1_RVT)                                      0.02       1.33 f
+  U221/Y (AO221X1_RVT)                                    0.03       1.36 f
+  U220/Y (NOR4X0_RVT)                                     0.03       1.39 r
+  U216/Y (NOR3X0_RVT)                                     0.04       1.43 f
+  U213/Y (OA21X1_RVT)                                     0.02       1.45 f
+  multiple_wait_state_reg[0]/D (DFFX1_RVT)                0.00       1.45 f
+  data arrival time                                                  1.45
+
+  clock clk (rise edge)                                   1.10       1.10
+  clock network delay (ideal)                             0.50       1.60
+  clock uncertainty                                      -0.01       1.59
+  multiple_wait_state_reg[0]/CLK (DFFX1_RVT)              0.00       1.59 r
+  library setup time                                     -0.02       1.57
+  data required time                                                 1.57
+  --------------------------------------------------------------------------
+  data required time                                                 1.57
+  data arrival time                                                 -1.45
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.12
+
+

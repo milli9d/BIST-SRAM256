@@ -1,0 +1,58 @@
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : SRAM
+Version: O-2018.06-SP5-1
+Date   : Fri Dec 20 21:42:51 2019
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ff1p16v125c   Library: saed32rvt_ff1p16v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: addr_in[1] (input port clocked by clk)
+  Endpoint: read_d_r_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SRAM               16000                 saed32rvt_ff1p16v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 f
+  addr_in[1] (in)                          0.00       1.00 f
+  U3581/Y (INVX1_RVT)                      0.01       1.01 r
+  U3585/Y (AND4X1_RVT)                     0.16       1.17 r
+  U3672/Y (AO22X1_RVT)                     0.04       1.21 r
+  U5092/Y (NOR4X1_RVT)                     0.05       1.26 f
+  U5098/Y (AO21X1_RVT)                     0.02       1.28 f
+  U5099/Y (OA221X1_RVT)                    0.03       1.31 f
+  U5100/Y (OA221X1_RVT)                    0.04       1.35 f
+  U5101/Y (OAI221X1_RVT)                   0.05       1.39 r
+  U5177/Y (MUX41X1_RVT)                    0.05       1.44 r
+  U5178/Y (AO22X1_RVT)                     0.02       1.46 r
+  read_d_r_reg[0]/D (DFFX1_RVT)            0.00       1.46 r
+  data arrival time                                   1.46
+
+  clock clk (rise edge)                    1.10       1.10
+  clock network delay (ideal)              0.50       1.60
+  clock uncertainty                       -0.01       1.59
+  read_d_r_reg[0]/CLK (DFFX1_RVT)          0.00       1.59 r
+  library setup time                      -0.02       1.57
+  data required time                                  1.57
+  -----------------------------------------------------------
+  data required time                                  1.57
+  data arrival time                                  -1.46
+  -----------------------------------------------------------
+  slack (MET)                                         0.11
+
+

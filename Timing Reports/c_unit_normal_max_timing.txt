@@ -1,0 +1,44 @@
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : control
+Version: O-2018.06-SP5-1
+Date   : Sat Dec 21 02:30:07 2019
+****************************************
+
+Operating Conditions: ff1p16v125c   Library: saed32rvt_ff1p16v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: c1_sig_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: c1 (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  control            ForQA                 saed32rvt_ff1p16v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  c1_sig_reg/CLK (DFFX1_RVT)               0.00       0.50 r
+  c1_sig_reg/Q (DFFX1_RVT)                 0.06       0.56 f
+  c1 (out)                                 0.00       0.56 f
+  data arrival time                                   0.56
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  clock uncertainty                       -0.01       0.99
+  output external delay                   -0.10       0.89
+  data required time                                  0.89
+  -----------------------------------------------------------
+  data required time                                  0.89
+  data arrival time                                  -0.56
+  -----------------------------------------------------------
+  slack (MET)                                         0.33
+
+

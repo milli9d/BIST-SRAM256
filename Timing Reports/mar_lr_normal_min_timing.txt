@@ -1,0 +1,48 @@
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+        -sort_by group
+Design : March_LR
+Version: O-2018.06-SP5-1
+Date   : Sat Dec 21 02:07:10 2019
+****************************************
+
+Operating Conditions: ff1p16v125c   Library: saed32rvt_ff1p16v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: w_addr_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: w_addr_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  March_LR           8000                  saed32rvt_ff1p16v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  w_addr_reg[2]/CLK (DFFX1_RVT)            0.00       0.50 r
+  w_addr_reg[2]/Q (DFFX1_RVT)              0.05       0.55 r
+  U390/Y (AO22X1_RVT)                      0.02       0.58 r
+  w_addr_reg[2]/D (DFFX1_RVT)              0.00       0.58 r
+  data arrival time                                   0.58
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.01       0.51
+  w_addr_reg[2]/CLK (DFFX1_RVT)            0.00       0.51 r
+  library hold time                        0.00       0.51
+  data required time                                  0.51
+  -----------------------------------------------------------
+  data required time                                  0.51
+  data arrival time                                  -0.58
+  -----------------------------------------------------------
+  slack (MET)                                         0.06
+
+

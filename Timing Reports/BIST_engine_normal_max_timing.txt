@@ -1,0 +1,127 @@
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : BIST_engine_top
+Version: O-2018.06-SP5-1
+Date   : Sat Dec 21 04:20:57 2019
+****************************************
+
+Operating Conditions: ff1p16v125c   Library: saed32rvt_ff1p16v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: march_lr/multiple_wait_state_reg[4]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: march_lr/multiple_wait_state_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  March_LR           8000                  saed32rvt_ff1p16v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  march_lr/multiple_wait_state_reg[4]/CLK (DFFX1_RVT)     0.00       0.50 r
+  march_lr/multiple_wait_state_reg[4]/QN (DFFX1_RVT)      0.06       0.56 r
+  march_lr/U959/Y (NAND2X0_RVT)                           0.02       0.58 f
+  march_lr/U958/Y (INVX0_RVT)                             0.02       0.59 r
+  march_lr/U957/Y (NAND2X0_RVT)                           0.03       0.63 f
+  march_lr/U942/Y (INVX0_RVT)                             0.02       0.64 r
+  march_lr/U896/Y (NAND2X0_RVT)                           0.02       0.66 f
+  march_lr/U895/Y (INVX0_RVT)                             0.01       0.68 r
+  march_lr/U894/Y (NAND2X0_RVT)                           0.24       0.92 f
+  march_lr/U893/Y (INVX0_RVT)                             0.30       1.22 r
+  march_lr/U892/Y (OR2X1_RVT)                             0.05       1.27 r
+  march_lr/U891/Y (AO22X1_RVT)                            0.04       1.31 r
+  march_lr/U890/Y (OR2X1_RVT)                             0.03       1.34 r
+  march_lr/U889/Y (AO22X1_RVT)                            0.04       1.38 r
+  march_lr/U888/Y (OR2X1_RVT)                             0.03       1.41 r
+  march_lr/U887/Y (AO22X1_RVT)                            0.04       1.45 r
+  march_lr/U886/Y (OR2X1_RVT)                             0.03       1.48 r
+  march_lr/U885/Y (AO22X1_RVT)                            0.04       1.52 r
+  march_lr/U884/Y (OR2X1_RVT)                             0.03       1.56 r
+  march_lr/U883/Y (AO22X1_RVT)                            0.04       1.60 r
+  march_lr/U882/Y (OR2X1_RVT)                             0.03       1.63 r
+  march_lr/U881/Y (AO22X1_RVT)                            0.04       1.67 r
+  march_lr/U880/Y (OR2X1_RVT)                             0.03       1.70 r
+  march_lr/U879/Y (AO22X1_RVT)                            0.03       1.74 r
+  march_lr/U878/Y (OR2X1_RVT)                             0.03       1.77 r
+  march_lr/U877/Y (AO22X1_RVT)                            0.03       1.81 r
+  march_lr/U876/Y (OR2X1_RVT)                             0.03       1.84 r
+  march_lr/U875/Y (AO22X1_RVT)                            0.03       1.88 r
+  march_lr/U874/Y (OR2X1_RVT)                             0.03       1.91 r
+  march_lr/U873/Y (AO22X1_RVT)                            0.03       1.94 r
+  march_lr/U872/Y (OR2X1_RVT)                             0.03       1.98 r
+  march_lr/U871/Y (AO22X1_RVT)                            0.03       2.01 r
+  march_lr/U870/Y (OR2X1_RVT)                             0.03       2.05 r
+  march_lr/U869/Y (AO22X1_RVT)                            0.03       2.08 r
+  march_lr/U868/Y (OR2X1_RVT)                             0.03       2.12 r
+  march_lr/U867/Y (AO22X1_RVT)                            0.03       2.15 r
+  march_lr/U866/Y (OR2X1_RVT)                             0.03       2.19 r
+  march_lr/U865/Y (AO22X1_RVT)                            0.03       2.22 r
+  march_lr/U864/Y (OR2X1_RVT)                             0.03       2.26 r
+  march_lr/U863/Y (AO22X1_RVT)                            0.03       2.29 r
+  march_lr/U862/Y (OR2X1_RVT)                             0.03       2.33 r
+  march_lr/U861/Y (AO22X1_RVT)                            0.03       2.36 r
+  march_lr/U860/Y (OR2X1_RVT)                             0.03       2.39 r
+  march_lr/U859/Y (AO22X1_RVT)                            0.03       2.43 r
+  march_lr/U858/Y (OR2X1_RVT)                             0.03       2.46 r
+  march_lr/U857/Y (AO22X1_RVT)                            0.03       2.50 r
+  march_lr/U856/Y (OR2X1_RVT)                             0.03       2.53 r
+  march_lr/U855/Y (AO22X1_RVT)                            0.03       2.57 r
+  march_lr/U854/Y (OR2X1_RVT)                             0.03       2.60 r
+  march_lr/U853/Y (AO22X1_RVT)                            0.03       2.64 r
+  march_lr/U852/Y (OR2X1_RVT)                             0.03       2.67 r
+  march_lr/U851/Y (AO22X1_RVT)                            0.03       2.71 r
+  march_lr/U850/Y (OR2X1_RVT)                             0.03       2.74 r
+  march_lr/U849/Y (AO22X1_RVT)                            0.03       2.78 r
+  march_lr/U848/Y (OR2X1_RVT)                             0.03       2.81 r
+  march_lr/U847/Y (AO22X1_RVT)                            0.03       2.84 r
+  march_lr/U846/Y (OR2X1_RVT)                             0.03       2.88 r
+  march_lr/U845/Y (AO22X1_RVT)                            0.03       2.91 r
+  march_lr/U844/Y (OR2X1_RVT)                             0.03       2.95 r
+  march_lr/U843/Y (AO22X1_RVT)                            0.03       2.98 r
+  march_lr/U842/Y (OR2X1_RVT)                             0.03       3.02 r
+  march_lr/U841/Y (AO22X1_RVT)                            0.03       3.05 r
+  march_lr/U840/Y (OR2X1_RVT)                             0.03       3.09 r
+  march_lr/U839/Y (AO22X1_RVT)                            0.03       3.12 r
+  march_lr/U838/Y (OR2X1_RVT)                             0.03       3.16 r
+  march_lr/U837/Y (AO22X1_RVT)                            0.03       3.19 r
+  march_lr/U836/Y (OR2X1_RVT)                             0.03       3.23 r
+  march_lr/U835/Y (AO22X1_RVT)                            0.03       3.26 r
+  march_lr/U834/Y (OR2X1_RVT)                             0.03       3.29 r
+  march_lr/U833/Y (AO22X1_RVT)                            0.03       3.33 r
+  march_lr/U832/Y (XNOR3X1_RVT)                           0.04       3.37 f
+  march_lr/U787/Y (AO22X1_RVT)                            0.03       3.40 f
+  march_lr/U786/Y (INVX0_RVT)                             0.01       3.41 r
+  march_lr/U771/Y (AND2X1_RVT)                            0.02       3.43 r
+  march_lr/U770/Y (NAND2X0_RVT)                           0.01       3.44 f
+  march_lr/U769/Y (AND3X1_RVT)                            0.03       3.48 f
+  march_lr/U767/Y (NAND2X0_RVT)                           0.02       3.50 r
+  march_lr/U766/Y (INVX0_RVT)                             0.02       3.51 f
+  march_lr/U765/Y (XOR2X1_RVT)                            0.05       3.56 r
+  march_lr/U760/Y (MUX21X1_RVT)                           0.03       3.59 r
+  march_lr/U739/Y (AO21X1_RVT)                            0.03       3.62 r
+  march_lr/U736/Y (NAND4X0_RVT)                           0.02       3.64 f
+  march_lr/multiple_wait_state_reg[0]/D (DFFX1_RVT)       0.00       3.64 f
+  data arrival time                                                  3.64
+
+  clock clk (rise edge)                                   3.50       3.50
+  clock network delay (ideal)                             0.50       4.00
+  clock uncertainty                                      -0.01       3.99
+  march_lr/multiple_wait_state_reg[0]/CLK (DFFX1_RVT)     0.00       3.99 r
+  library setup time                                     -0.02       3.97
+  data required time                                                 3.97
+  --------------------------------------------------------------------------
+  data required time                                                 3.97
+  data arrival time                                                 -3.64
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.32
+
+
